@@ -21,7 +21,6 @@ const [usuarios,total]=await Promise.all([
 .limit(limite),
 Usuario.countDocuments({estado:true}),
 ])
-
     res.json({
         total,
         usuarios,
